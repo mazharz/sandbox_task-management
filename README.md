@@ -5,20 +5,25 @@
 - [x] add proof of concept endpoints
 - [ ] add authentication
   - [ ] signup
-  - [ ] store password with bcrypt
+    - [x] store user
+    - [ ] store password with bcrypt
+      - [ ] create salt per user
+    - [ ] generate ott
+    - [ ] verify by ott
+    - [ ] return generated jwt token for accessing routes
+  - [ ] add input validation
   - [ ] login
-  - [ ] generate jwt token for accessing routes
-  - [ ] protect all routes but the signup/login with Bearer token
+  - [ ] protect all routes except the signup/login with Bearer token
+- [ ] task CRUD endpoints
 - [ ] implement role based access control (normal & readonly users)
   - [ ] per task configurable
-- [ ] task CRUD endpoints
 
 ## data model
 
 user:
 
-| id  | username | name | email | pass_hash | role | created_at |
-| --- | -------- | ---- | ----- | --------- | ---- | ---------- |
+| id  | name | email | pass_hash | is_verified | permissions | created_at |
+| --- | ---- | ----- | --------- | ----------- | ----------- | ---------- |
 
 task:
 
