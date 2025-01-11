@@ -1,0 +1,6 @@
+[TYPECHECK]
+ignored-modules=psycopg2.errors
+
+[MESSAGES CONTROL]
+disable=broad-exception-caught
+
