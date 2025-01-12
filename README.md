@@ -8,9 +8,8 @@
     - [x] store user
     - [x] store password with bcrypt
       - [x] create salt per user
-    - [ ] generate ott
-    - [ ] verify by ott
-    - [ ] return generated jwt access token for accessing routes
+    - [x] verify email by ott
+    - [ ] jwt access token for accessing routes
   - [ ] add input validation
   - [ ] login
     - [x] MVP
@@ -35,6 +34,6 @@ task:
 
 token:
 
-| id  | owner_id               | token |
-| --- | ---------------------- | ----- |
-|     | user owning auth token |       |
+| id  | owner_id               | value | expires_at |
+| --- | ---------------------- | ----- | ---------- |
+|     | user owning auth token |       | timestamp  |
