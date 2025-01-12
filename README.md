@@ -4,17 +4,17 @@
 
 - [x] add proof of concept endpoints
 - [ ] add authentication
-  - [ ] signup
+  - [x] signup
     - [x] store user
     - [x] store password with bcrypt
       - [x] create salt per user
     - [x] verify email by ott
-    - [ ] jwt access token for accessing routes
-  - [ ] add input validation
-  - [ ] login
+    - [x] jwt access token for accessing routes
+  - [x] login
     - [x] MVP
-    - [ ] generate jwt access token and send back
+    - [x] generate jwt access token and send back
   - [ ] protect all routes except the signup/login with Bearer token
+- [ ] add input validation
 - [ ] task CRUD endpoints
 - [ ] implement role based access control (normal & readonly users)
   - [ ] per task configurable
